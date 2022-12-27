@@ -8,10 +8,7 @@ const limiter = rateLimit({
 });
 
 const {
-  user_registartion,
   user_login,
-  user_google_login,
-  user_facebook_login,
   user_forgot_password,
   user_reset_password,
   user_update,
@@ -27,7 +24,6 @@ const {
 } = require("./controller");
 const { run_validation } = require("../../middlewares/express-validator");
 const {
-  register_middleware,
   login_middlware,
   forgot_password_validator,
   reset_password_validator,

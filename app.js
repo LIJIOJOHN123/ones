@@ -22,9 +22,11 @@ app.use(cors());
 
 const user_routers = require("./components/user/router");
 const master_publisher_routers = require("./components/master-publisher/router");
+const master_admin_routers = require("./components/master-admin/router");
 
 app.use("/api/user", user_routers);
 app.use("/api/master_publisher", master_publisher_routers);
+app.use("/api/master_admin", master_admin_routers);
 
 //user
 
